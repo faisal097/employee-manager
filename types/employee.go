@@ -3,11 +3,11 @@ package types
 import "fmt"
 
 type Employee struct {
-	Id         string
-	Name       string
-	Age        int
-	Department string
-	Salary     int
+	Id         string `json:"id"`
+	Name       string `json:"name"`
+	Age        int    `json:"age"`
+	Department string `json:"department"`
+	Salary     int    `json:"salary"`
 }
 
 func NewEmployee(id string, name string) *Employee {

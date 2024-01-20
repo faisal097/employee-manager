@@ -17,7 +17,7 @@ func init() {
 	confPath = flag.String("conf", "../config.json", "config file path")
 	flag.Parse()
 
-	var err error
+	//var err error
 	conf, err = config.ParseConfig(*confPath)
 	if err != nil {
 		log.Fatalf("Error in ParseConfig: %s", err.Error())
