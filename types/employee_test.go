@@ -19,7 +19,7 @@ func TestNewEmployee(t *testing.T) {
 			id:       "emp00001",
 			name:     "Faisal",
 			output: &types.Employee{
-				Id:   "emp00001",
+				ID:   "emp00001",
 				Name: "Faisal",
 			},
 		},
