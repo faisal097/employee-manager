@@ -9,8 +9,11 @@ import (
 )
 
 var (
+	//confPath is the config file path
 	confPath *string
-	conf     *config.HttpServerConfig
+
+	//conf is the config instance
+	conf *config.HttpServerConfig
 )
 
 func init() {
