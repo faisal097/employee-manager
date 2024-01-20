@@ -2,7 +2,7 @@ package types
 
 import "fmt"
 
-// Employee represent employee details in the system
+// Employee represent employee details in the system.
 type Employee struct {
 	ID         string `json:"id"`
 	Name       string `json:"name"`
@@ -11,7 +11,7 @@ type Employee struct {
 	Salary     int    `json:"salary"`
 }
 
-// NewEmployee returns the Employee object
+// NewEmployee returns the Employee object.
 func NewEmployee(id string, name string) *Employee {
 	return &Employee{
 		ID:   id,
@@ -19,7 +19,7 @@ func NewEmployee(id string, name string) *Employee {
 	}
 }
 
-// ToString stringify the Employee object
+// ToString stringify the Employee object.
 func (e *Employee) ToString() string {
 	return fmt.Sprintf("Employee Name: %s, Department: %s, Salary: %d, Age: %d", e.Name, e.Department, e.Salary, e.Age)
 }

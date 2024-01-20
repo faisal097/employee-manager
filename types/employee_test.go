@@ -50,7 +50,7 @@ func TestToString(t *testing.T) {
 			testName: "Test 2",
 			id:       "emp00002",
 			name:     "Saliq",
-			output:   "Employee Name: Faisal, Department: , Salary: 0, Age: 0",
+			output:   "Employee Name: Saliq, Department: , Salary: 0, Age: 0",
 		},
 	}
 
