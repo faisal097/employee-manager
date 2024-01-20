@@ -46,6 +46,12 @@ func TestToString(t *testing.T) {
 			name:     "Faisal",
 			output:   "Employee Name: Faisal, Department: , Salary: 0, Age: 0",
 		},
+		{
+			testName: "Test 2",
+			id:       "emp00002",
+			name:     "Saliq",
+			output:   "Employee Name: Faisal, Department: , Salary: 0, Age: 0",
+		},
 	}
 
 	for _, test := range tests {
