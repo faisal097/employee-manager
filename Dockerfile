@@ -19,4 +19,5 @@ RUN go build -o server cmd/main.go
 # Specifies the executable command that runs when the container starts
 #CMD [ “/server” ]
 
+#docker build --rm -t faisal0097/experiments:server-dev-v1 .
 #docker run -it --rm --name devserver -p 3333:3333 faisal0097/experiments:server-dev-v1 /app/server -conf ./config.json
