@@ -2,11 +2,13 @@ package httpserver
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/faisal097/employee-manager/config"
 )
 
+// Serve setup routes for http server and open port to accept connections.
 func Serve(c *config.HttpServerConfig) error {
 	http.HandleFunc("/healthz", getHealth)
 	http.HandleFunc("/get/{name}", get)
@@ -15,10 +17,12 @@ func Serve(c *config.HttpServerConfig) error {
 	http.HandleFunc("/update/{name}", update)
 
 	addr := fmt.Sprintf(":%s", c.GetPort())
+	log.Printf("Http server starting at %s", addr)
 	return http.ListenAndServe(addr, nil)
 }
 
 func getHealth(w http.ResponseWriter, r *http.Request) {
+	log.Println("getHealth invoked")
 	if r.Method == http.MethodGet {
 		fmt.Fprintf(w, "OK")
 		return
@@ -27,6 +31,7 @@ func getHealth(w http.ResponseWriter, r *http.Request) {
 }
 
 func get(w http.ResponseWriter, r *http.Request) {
+	log.Println("getHealth get")
 	if r.Method == http.MethodGet {
 		fmt.Fprintf(w, "Not implemented")
 		return
@@ -35,6 +40,7 @@ func get(w http.ResponseWriter, r *http.Request) {
 }
 
 func set(w http.ResponseWriter, r *http.Request) {
+	log.Println("getHealth set")
 	if r.Method == http.MethodPost {
 		fmt.Fprintf(w, "Not implemented")
 		return
@@ -43,6 +49,7 @@ func set(w http.ResponseWriter, r *http.Request) {
 }
 
 func update(w http.ResponseWriter, r *http.Request) {
+	log.Println("getHealth update")
 	if r.Method == http.MethodPost {
 		fmt.Fprintf(w, "Not implemented")
 		return
@@ -51,6 +58,7 @@ func update(w http.ResponseWriter, r *http.Request) {
 }
 
 func delete(w http.ResponseWriter, r *http.Request) {
+	log.Println("getHealth delete")
 	if r.Method == http.MethodPost {
 		fmt.Fprintf(w, "Not implemented")
 		return
