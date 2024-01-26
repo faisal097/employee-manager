@@ -39,3 +39,9 @@ func main() {
 	}()
 	<-done
 }
+
+/*
+Next Steps:
+	Helm: https://opensource.com/article/20/5/helm-charts
+	make: https://opensource.com/article/18/8/what-how-makefile
+*/
