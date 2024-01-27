@@ -52,5 +52,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: faisal0097/experiments:server-${{ github.head_ref }}-${{ github.sha::7 }}
+          tags: faisal0097/experiments:server-${{ github.head_ref }}-${{ github.sha }}
           #tags: faisal0097/experiments:server-${{ github.head_ref }}-${{github.ref_name}}
