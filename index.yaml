@@ -3,6 +3,16 @@ entries:
   httpserver:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-01-27T09:24:38.029075495Z"
+    description: A Helm chart for Kubernetes
+    digest: 94e42a0359d617c5e10cfbaf555c9f697c22610c959484a23739a78f81b06694
+    name: httpserver
+    type: application
+    urls:
+    - https://github.com/faisal097/employee-manager/releases/download/httpserver-1.0.1/httpserver-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-01-26T15:39:42.147270047Z"
     description: A Helm chart for Kubernetes
     digest: c280fc0cea4e5fcb15b8c63be8a30b2b5f010dbf060d08b137a427087f7cadf1
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/faisal097/employee-manager/releases/download/httpserver-0.1.0/httpserver-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-26T15:39:42.14729238Z"
+generated: "2024-01-27T09:24:38.029084021Z"
