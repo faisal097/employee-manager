@@ -30,6 +30,11 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
+      - name: Create tag artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{github.ref_name}}
+        path: Release
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -47,4 +52,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: ${{ github.event_name != 'pull_request' }}
-          tags: faisal0097/experiments:server-${{ github.head_ref }}-${{ github.sha }}
+          #tags: faisal0097/experiments:server-${{ github.head_ref }}-${{ github.sha::7 }}
+          tags: faisal0097/experiments:server-${{ github.head_ref }}-${{github.ref_name}}
