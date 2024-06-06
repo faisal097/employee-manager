@@ -44,4 +44,6 @@ func main() {
 Next Steps:
 	Helm: https://opensource.com/article/20/5/helm-charts
 	make: https://opensource.com/article/18/8/what-how-makefile
+
+	Create EKS Cluster: https://www.youtube.com/watch?v=p6xDCz00TxU
 */
